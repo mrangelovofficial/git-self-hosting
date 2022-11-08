@@ -7,7 +7,9 @@
         <title inertia>{{ config('app.name', 'Git SelfHosting') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Roboto:wght@400;600;700&display=swap">
 
         <!-- Scripts -->
         @routes
