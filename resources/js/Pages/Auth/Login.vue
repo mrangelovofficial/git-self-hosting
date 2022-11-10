@@ -1,6 +1,6 @@
 <script setup>
 import Checkbox from '@/Components/Checkbox.vue';
-import GuestLayout from '@/Layouts/GuestLayout.vue';
+import FrontLayout from '@/Layouts/FrontLayout.vue';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import AuthButton from '@/Components/Auth/AuthButton.vue';
@@ -27,7 +27,7 @@ const submit = () => {
 </script>
 
 <template>
-    <GuestLayout>
+    <FrontLayout>
         <Head title="Log in" />
         <h2 class="font-bold text-4xl">Welcome back,</h2>
         <p class="text-gray-500 text-md mt-1 mb-6">Continue with Facebook or enter your details.</p>
@@ -74,5 +74,5 @@ const submit = () => {
                 </AuthButton>
             </div>
         </form>
-    </GuestLayout>
+    </FrontLayout>
 </template>

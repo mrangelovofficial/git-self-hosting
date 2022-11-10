@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue';
-import GuestLayout from '@/Layouts/GuestLayout.vue';
+import FrontLayout from '@/Layouts/FrontLayout.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
 
@@ -18,7 +18,7 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
 </script>
 
 <template>
-    <GuestLayout>
+    <FrontLayout>
         <Head title="Email Verification" />
 
         <div class="mb-4 text-sm text-gray-600">
@@ -38,5 +38,5 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
                 <Link :href="route('logout')" method="post" as="button" class="underline text-sm text-gray-600 hover:text-gray-900">Log Out</Link>
             </div>
         </form>
-    </GuestLayout>
+    </FrontLayout>
 </template>
