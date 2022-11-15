@@ -1,5 +1,5 @@
 <script setup>
-import ApplicationLogo from '@/Components/ApplicationLogo.vue';
+import ApplicationLogo from '@/Components/Auth/ApplicationLogo.vue';
 import { Link } from '@inertiajs/inertia-vue3';
 </script>
 
@@ -7,7 +7,7 @@ import { Link } from '@inertiajs/inertia-vue3';
     <div class="flex w-full h-screen">
         <div class="w-full lg:w-5/12 py-6 px-14">
             <Link href="/">
-                <ApplicationLogo class="h-8 mb-20 fill-current text-gray-900" />
+                <ApplicationLogo class="h-12 mb-20 fill-current text-gray-900" />
             </Link>
             <div class="md:w-9/12 max-w-md mx-auto">
                 <slot />
